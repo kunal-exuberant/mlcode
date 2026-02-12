@@ -1,4 +1,4 @@
-# Monetisation RAG Chat
+# ML RAG Chat
 
 A RAG (Retrieval-Augmented Generation) chat application built with [LangChain4j](https://docs.langchain4j.dev/). It uses an in-memory vector store, in-process embeddings (AllMiniLmL6V2, no API key), and Google Gemini for answers.
 
