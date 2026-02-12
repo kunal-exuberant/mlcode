@@ -30,6 +30,7 @@ public class Main {
         Chunker chunker = new Chunker();
         List<TextSegment> segments = chunker.getChunks(documents);
         EmbeddingStore<TextSegment> embeddingStore = new InMemoryEmbeddingStore<>();
+
         EmbeddingModel embeddingModel = new EmbeddingModel();
         VectorDatabase vectorDatabase = new VectorDatabase(embeddingModel.getEmbeddingModel(), embeddingStore);
         if(segments.isEmpty()) {
