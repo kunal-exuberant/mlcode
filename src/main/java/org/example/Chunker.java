@@ -16,7 +16,7 @@ public class Chunker {
     private final DocumentSplitter fallbackSplitter;
 
     public Chunker() {
-        this.recursiveSplitter = DocumentSplitters.recursive(1000, 200);
+        this.recursiveSplitter = DocumentSplitters.recursive(500, 100);
         this.fallbackSplitter = new DocumentByCharacterSplitter(1000, 200);
     }
 

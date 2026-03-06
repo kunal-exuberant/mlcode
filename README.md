@@ -83,6 +83,12 @@ See **[ENHANCEMENTS.md](ENHANCEMENTS.md)** for a structured list of improvements
 1. Put text files under a **`docs/`** folder in the project root.
 2. In code, use `RagApp` to load them, `Chunker` to split, and `VectorDatabase` to ingest into the same in-memory store you pass to `ContentRetriever` in `Main`. Until ingestion is wired in and run once, the store starts empty and retrieval may return no context.
 
+
+## Mysql MCP Server
+
+npx @modelcontextprotocol/server-mysql mysql://username:password@localhost:3306/your_database
+
+
 ## License
 
 See repository defaults.
